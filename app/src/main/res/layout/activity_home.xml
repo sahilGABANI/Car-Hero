@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Welcome Vrymel"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/jakarta_medium"
+                android:textSize="@dimen/_14ssp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_rounded"
+                android:scaleType="centerCrop"
+                android:layout_toStartOf="@id/ivNotification"
+                android:src="@drawable/ic_complete"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_rounded"
+                android:src="@drawable/ic_notification"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_8sdp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlAddVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:background="@drawable/bg_rounded_button_background"
+        android:layout_alignParentTop="true">
+
+        <View
+            android:id="@+id/verticalView"
+            android:layout_width="@dimen/_2sdp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/llAddVehicle"
+            android:layout_alignBottom="@id/llAddVehicle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:id="@+id/llAddVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/verticalView"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It looks like you haven't added a vehicle yet"
+                android:fontFamily="@font/jakarta_semi_bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/_9ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bg_squre_rounded_white"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_vehicle"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:includeFontPadding="false"
+                    android:text="Add Vehicle "
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_11ssp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rlOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlAddVehicle"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:background="@drawable/bg_rounded_option_background"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:text="Carwash"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_10ssp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_carwash" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:background="@drawable/bg_rounded_option_background"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingHorizontal="@dimen/_8sdp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:background="@drawable/bg_orenge_rounded"
+                    android:text="Soon"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_8ssp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:text="Vulcanizing shop"
+                    android:layout_toStartOf="@id/ivVulcanizingShop"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_10ssp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivVulcanizingShop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_vulcanizing_shop" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/bg_rounded_option_background">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:background="@drawable/bg_orenge_rounded"
+                        android:text="Soon"
+                        android:layout_alignParentEnd="true"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_car_rescue" />
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="Car Rescue"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/bg_rounded_option_background">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:background="@drawable/bg_orenge_rounded"
+                        android:text="Soon"
+                        android:layout_alignParentEnd="true"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_towing" />
+                </RelativeLayout>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="Towing"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_10ssp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/bg_rounded_option_background">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_2sdp"
+                        android:background="@drawable/bg_orenge_rounded"
+                        android:text="Soon"
+                        android:layout_alignParentEnd="true"
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/jakarta_medium"
+                        android:textSize="@dimen/_8ssp"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_battery" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:text="Battery"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/jakarta_medium"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_below="@id/rlOption"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feautured on Vrymel"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/jakarta_semi_bold"
+            android:textSize="@dimen/_14ssp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFeatured"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/view_featured"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

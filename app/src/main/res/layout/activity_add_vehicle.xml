@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addvehicle.AddVehicleActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jakarta_semi_bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="Add Vehicle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSelectVehicleType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSelectVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/jakarta_medium"
+            android:includeFontPadding="false"
+            android:text="Select Vehicle Type"
+            android:textColor="#19191A"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvSelectVehicleType"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:hint="e.g. Civic Turbo CVT Honda "
+            app:boxStrokeColor="#E8E8E8"
+            app:boxCornerRadiusBottomEnd="@dimen/_6sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_6sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_6sdp"
+            app:boxCornerRadiusTopStart="@dimen/_6sdp"
+            app:hintEnabled="false"
+            app:hintTextColor="#727272">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSelectVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g. Civic Turbo CVT Honda"
+                android:cursorVisible="false"
+                android:includeFontPadding="false"
+                android:inputType="none"
+                android:textColor="#19191A"
+                android:textColorHint="#727272"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:textSize="@dimen/_12ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlEnterCarType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlSelectVehicleType">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEnterCarType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/jakarta_medium"
+            android:includeFontPadding="false"
+            android:text="Enter Car Type"
+            android:textColor="#19191A"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvEnterCarType"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:hint="e.g. Civic Turbo CVT Honda"
+            app:boxStrokeColor="#E8E8E8"
+            app:boxCornerRadiusBottomEnd="@dimen/_6sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_6sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_6sdp"
+            app:boxCornerRadiusTopStart="@dimen/_6sdp"
+            app:hintEnabled="false"
+            app:hintTextColor="#727272">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEnterCarType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="e.g. Civic Turbo CVT Honda "
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress"
+                android:textColor="#19191A"
+                android:textColorHint="#727272"
+                android:textSize="@dimen/_12ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlPlatNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlEnterCarType">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPlatNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/jakarta_medium"
+            android:includeFontPadding="false"
+            android:text="Plat Number"
+            android:textColor="#19191A"
+            android:textSize="@dimen/_12ssp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPlatNumber"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:hint="xxx-xxx"
+            app:boxStrokeColor="#E8E8E8"
+            app:boxCornerRadiusBottomEnd="@dimen/_6sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_6sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_6sdp"
+            app:boxCornerRadiusTopStart="@dimen/_6sdp"
+            app:hintEnabled="false"
+            app:hintTextColor="#727272">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPlatNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="xxx-xxx"
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:textColor="#19191A"
+                android:textColorHint="#727272"
+                android:textSize="@dimen/_12ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:fontFamily="@font/jakarta_semi_bold"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:minHeight="@dimen/_48sdp"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.05"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:text="Add Vehicle"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:cornerRadius="@dimen/_8sdp"
+        app:iconGravity="textEnd" />
+
+
+</RelativeLayout>
