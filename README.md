@@ -57,4 +57,27 @@ You can increase the version code and version name in your `build.gradle` file t
 
 1. select `Build` -> `Genreate Signed Bundle/APK`. 
 
-2. 
+2. then Open below dialog 
+
+![image](https://github.com/user-attachments/assets/937a965f-5632-4e4b-90da-515831057eb8)
+
+3. If you need to create an APK, select Build APK(s). If you're preparing to publish the app, choose Build Android App Bundle instead. Then below Dialog 
+
+![image](https://github.com/user-attachments/assets/6bb7c02c-0885-4e5d-9400-67a0490e57f0)
+
+4. For Key Store Path. You can select from Github Clone File Path -> `app` -> `CarHero.jks` select File. 
+5. Key Store Password => app@carHero
+6. Key Alias => carHero
+7. key Password => app@carHero
+
+8. then click On Next Button then show below Dialog 
+
+![image](https://github.com/user-attachments/assets/d73c84ea-29e6-4429-a2dc-6569fc5b6b7b)
+
+9. please select Released build Variants. and Click on Create Button.
+
+
+
+
+
+
