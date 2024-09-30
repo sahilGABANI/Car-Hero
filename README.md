@@ -10,9 +10,11 @@ To run this project, follow the steps below:
 1. Open the project in Android Studio.
 2. File > New > Project from Version Control...
 3. In the **URL** field, paste the following repository URL:
+
    ```bash
     git clone https://github.com/himanshugjr57/CarHeroAndroidPrivate.git
     ```
+   
 4. Sync the Gradle project by selecting `File` -> `Sync Project with Gradle Files`. 
 
 
@@ -76,8 +78,9 @@ You can increase the version code and version name in your `build.gradle` file t
 
 9. please select Released build Variants. and Click on Create Button.
 
+10. Android Studio will start building the APK. Once completed, you will receive a notification in the bottom-right corner saying "APK(s) generated successfully."
 
-
+![image](https://github.com/user-attachments/assets/5ce15cbf-0135-42e4-8fd0-6490b14df327)
 
 
 
