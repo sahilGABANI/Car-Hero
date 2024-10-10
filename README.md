@@ -5,6 +5,7 @@
 - [Running the App](#running-the-app)
 - [Updating the Build Version](#updating-the-build-version)
 - [Generating APK or AAB](#generating-apk-or-aab)
+- [Upload App In Play store](#uploading-a-new-aab-to-an-on-google-play-console)
 
 ## Installation
 
@@ -97,8 +98,6 @@ Follow these steps to create an APK or Android App Bundle for your project:
 ## Uploading a New AAB to an on Google Play Console
 
 Follow these steps to update an existing app on the Google Play Console with a new APK or AAB.
-
-
 
 ## Prerequisites
 
